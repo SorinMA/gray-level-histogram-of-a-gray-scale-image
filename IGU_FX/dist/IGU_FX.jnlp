@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="IGU_FX.jnlp">
+  <information>
+    <title>IGU_FX</title>
+    <vendor>PatriqOnGamesAndUPB</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="IGU_FX.jar" size="1699138" download="eager" />
+    <jar href="lib\gnujaxp.jar" size="231445" download="eager" />
+    <jar href="lib\jcommon-1.0.0.jar" size="294514" download="eager" />
+    <jar href="lib\jfreechart-1.0.1.jar" size="1075621" download="eager" />
+    <jar href="lib\junit.jar" size="121070" download="eager" />
+    <jar href="lib\servlet.jar" size="80054" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="IGU_FX" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="igu_fx.IGU_FX"  name="IGU_FX" />
+  <update check="always"/>
+</jnlp>

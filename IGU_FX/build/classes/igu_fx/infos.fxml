@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" focusTraversable="true" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="igu_fx.FXMLController">
+    <stylesheets>
+        <URL value="@infos.css" />
+    </stylesheets>
+   <children>
+      <Accordion layoutX="3.0" layoutY="9.0" prefHeight="378.0" prefWidth="587.0">
+        <panes>
+          <TitledPane animated="false" text="GNU">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TreeView layoutX="28.0" layoutY="23.0" prefHeight="276.0" prefWidth="530.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" text="APACHE">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView layoutX="30.0" layoutY="22.0" prefHeight="278.0" prefWidth="525.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+        </panes>
+      </Accordion>
+      <TableView layoutX="74.0" layoutY="398.0" prefHeight="200.0" prefWidth="432.0">
+        <columns>
+          <TableColumn prefWidth="215.0" text="GNU" />
+          <TableColumn prefWidth="216.0" text="APACHE" />
+        </columns>
+      </TableView>
+      <ToggleButton layoutX="235.0" layoutY="698.0" minWidth="15.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" text="toggle_end" />
+      
+      <TextField layoutX="57.0" layoutY="610.0" prefHeight="75.0" prefWidth="480.0" />
+   </children>
+</AnchorPane>
